@@ -47,26 +47,6 @@ To run Island Mapper, you need:
    - **Number of Islands:** Count distinct islands using DFS.
 4. View results in the text field at the top of the application.
 
-## Code Highlights
-
-The core functionalities include:
-
-- **DFS Algorithm:**
-    ```java
-    void dfs(int[][] map, int i, int j) {
-        if (i < 0 || j < 0 || i >= map.length || j >= map[0].length || map[i][j] != 1) {
-            return;
-        }
-        map[i][j] = -1; // Mark visited
-        dfs(map, i + 1, j);
-        dfs(map, i - 1, j);
-        dfs(map, i, j + 1);
-        dfs(map, i, j - 1);
-    }
-    ```
-
-- **GUI Components:** Built using Java Swing for a user-friendly interface.
-
 ## Advantages
 
 - Intuitive and interactive interface.
